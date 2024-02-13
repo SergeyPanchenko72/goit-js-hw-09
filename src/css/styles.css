@@ -5,3 +5,32 @@
   |============================
 */
 @import url('./reset.css');
+
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+}
+.gallery {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.gallery-item {
+  text-decoration: none;
+  transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
+
+.gallery-item:hover,
+.gallery-item:focus {
+  transform: scale(1.04);
+}
